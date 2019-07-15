@@ -1,17 +1,16 @@
 cluster:
-  clusterName: ""
-  environmentGitOwner: ""
-  project: ""
+  clusterName: jx-infra-staging
+  environmentGitOwner: jenkins-x
+  project: jenkins-x-infra-staging
   provider: gke
-  zone: ""
-gitops: false
+  zone: europe-west1-c
 environments:
 - key: dev
 - key: staging
 - key: production
 ingress:
-  domain: ""
-  externalDNS: false
+  domain: jenkins-x.live
+  externalDNS: true
   tls:
     email: ""
     enabled: false
