@@ -12,9 +12,9 @@ ingress:
   domain: jenkins-x.live
   externalDNS: true
   tls:
-    email: ""
-    enabled: false
-    production: false
+    email: jrawlingsj@cloudbees.com
+    enabled: true
+    production: true
 kaniko: true
 secretStorage: local
 storage:
@@ -27,4 +27,7 @@ storage:
   repository:
     enabled: false
     url: ""
+versionStream:
+  ref: master
+  url: https://github.com/jenkins-x/jenkins-x-versions.git
 webhook: prow
