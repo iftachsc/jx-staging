@@ -1,6 +1,10 @@
 cluster:
   clusterName: jx-infra-staging
   environmentGitOwner: jenkins-x
+  gitKind: github
+  gitName: github
+  gitServer: https://github.com
+  namespace: jx
   project: jenkins-x-infra-staging
   provider: gke
   zone: europe-west1-c
@@ -11,6 +15,7 @@ environments:
 ingress:
   domain: jenkins-x.live
   externalDNS: true
+  namespaceSubDomain: -jx.
   tls:
     email: jrawlingsj@cloudbees.com
     enabled: true
