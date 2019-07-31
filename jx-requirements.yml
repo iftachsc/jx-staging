@@ -10,8 +10,10 @@ cluster:
   zone: europe-west1-c
 environments:
 - key: dev
+  repository: jx-staging
 - key: staging
 - key: production
+gitops: true
 ingress:
   domain: jenkins-x.live
   externalDNS: true
@@ -35,5 +37,4 @@ storage:
 versionStream:
   ref: master
   url: https://github.com/jenkins-x/jenkins-x-versions.git
-gitops: true
 webhook: prow
