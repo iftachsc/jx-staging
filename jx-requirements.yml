@@ -33,6 +33,6 @@ storage:
     enabled: false
     url: ""
 versionStream:
-  ref: v1.0.2
+  ref: master
   url: https://github.com/jenkins-x/jenkins-x-versions.git
 webhook: prow
