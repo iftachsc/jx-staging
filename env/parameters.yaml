@@ -2,12 +2,8 @@ adminUser:
   password: vault:jx-infra-staging/adminUser:password
   username: admin
 enableDocker: false
-gitProvider: github
-gpg: {}
 pipelineUser:
-  github:
-    host: github.com
-    token: vault:jx-infra-staging/pipelineUser-github:token
-    username: jenkins-x-bot-test
+  token: vault:jx-infra-staging/pipelineUser:token
+  username: jenkins-x-bot-test
 prow:
   hmacToken: vault:jx-infra-staging/prow:hmacToken
